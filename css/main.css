@@ -1,100 +1,167 @@
- @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;1,400;1,500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;1,400;1,500&display=swap");
 
- * {
-     box-sizing: border-box;
-     padding: 0;
-     margin: 0;
- }
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+ul {
+  list-style: none;
+}
+.faq {
+  border: 2px solid red;
+}
+.faq h2 {
+  width: 129px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 50px;
+  color: #23b0c2;
+  margin: auto;
+  margin-bottom: 60px;
+}
 
- 
+.item {
+  width: 80%;
+  margin: 20px auto;
+}
 
- .faq h2 {
-     Width: 129px;
-     font-family: 'Poppins', sans-serif;
-     font-weight: 600;
-     font-size: 50px;
-     color: #23B0C2;
-     margin: auto;
-     margin-bottom: 60px;
- }
+.item .quest {
+  border: 2px solid blue;
+  background-color: #23b0c2;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 40px;
+}
+.item .quest h3 {
+  color: #fdcf46;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 60px;
+}
 
- .item {
-     width: 80%;
-     margin: 20px auto;
- }
+.item .answ {
+  margin: 10px auto;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 60px;
+  border-radius: 25px;
+  background-color: #23b0c2;
+  display: none;
+  padding: 10px 64px;
+}
+#active .answ {
+  display: block;
+}
+.inactive .answ {
+  display: none;
+}
+header {
+  z-index: 50;
+  position: sticky;
+  width: 100%;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px;
+  background-color: #ffffff;
+}
+.logo {
+  padding-left: 20px;
+}
+.logo img {
+  width: 210px;
+  height: 130px;
+}
+.nav-list {
+  display: flex;
+  align-items: center;
+  width: 45%;
+  justify-content: space-between;
+  margin-right: 7%;
+  gap: 50px;
+}
+.list-item a {
+  font-size: 30px;
+  text-decoration: none;
+  color: black;
+}
+.btn,
+.btn-reg {
+  background-color: #fcce45;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #4c4c4c;
+  margin-right: 50px;
+  text-decoration: none;
+}
+main {
+  background: linear-gradient(
+    to left,
+    rgba(168, 168, 168, 0.4612),
+    rgba(156, 156, 156, 0.58),
+    rgba(217, 217, 217, 0)
+  );
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-evenly;
+  gap: 80px;
+  height: 480px;
+}
+.left-col {
+  position: relative;
+}
 
- .item .quest {
-     background-color: #23B0C2;
-     display: flex;
-     justify-content: space-between;
-     padding: 20px 50px;
-     border-radius: 30px;
-     margin-bottom: 30px;
- }
+.left-col h1 {
+  font-size: 40px;
+  margin-left: 15px;
+}
+.left-col h2 {
+  font-size: 35px;
+  margin-left: 15px;
+}
+.left-col span {
+  color: #fbd254;
+  font-weight: bold;
+}
+.arrow {
+  padding-left: 48%;
 
- .item .quest h3 {
-     color: #FDCF46;
-     ;
-     font-family: 'Poppins', sans-serif;
-     font-style: normal;
-     font-weight: 500;
-     font-size: 40px;
-     line-height: 60px;
- }
+  position: relative;
+  z-index: 1;
+}
+.left-col a {
+  z-index: 4;
+  position: absolute;
+  font-size: 30px;
+  color: white;
+  margin-right: 45px;
+  margin-top: 130px;
+  background-color: #23b0c2;
+  box-shadow: 0 6px 4px -4px gray;
+}
+.arrow-container {
+  display: grid;
+  width: 150%;
+  margin-right: 50px;
+}
 
- .item .answ {
-     margin: 10px auto;
-     font-family: 'Poppins';
-     font-style: normal;
-     font-weight: 500;
-     font-size: 40px;
-     line-height: 60px;
-     border-radius: 25px;
-     background-color: #23B0C2;
-     display: none;
-     padding: 10px 64px;
- }
+.left-col a,
+.arrow {
+  grid-column: 1;
+  grid-row: 1;
+}
 
- #active .answ {
-     display: block;
- }
-
- .inactive .answ {
-     display: none;
- }
-
-
- .time_left {
-     border: 2px solid green;
- }
-
- .time_left h2 {
-     width: fit-content;
-     margin-bottom: 40px;
-     margin-top: 40px;
- }
-
- .time_left .full_time {
-    
-     width: 80%;
-     padding: 20px;
-     margin: auto;
-     display: flex;
-     justify-content: space-between;
- }
-
- .time_left .full_time .time {
-    
-     width: 10%;
-     display: flex;
-     flex-direction: column;
-     
- }
- .time_left .full_time .time div{
-    height: 150px;
-    border: 2px solid;
- }
- .time_left .full_time .time  h2{
-    color: black;
- }
- 
+.right-col img {
+  height: 350px;
+  width: 450px;
+}
