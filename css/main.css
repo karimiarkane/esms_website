@@ -214,12 +214,12 @@ header {
   max-width: 100%;
 }
 .what h2 {
-  font-size: 1.8em;
+  font-size: 1.4em;
   color: #fdcf46;
 }
 .what p {
   color: #919191;
-  font-size: 1.5em;
+  font-size: 1em;
   font-weight: bold;
 }
 
@@ -398,7 +398,7 @@ footer {
         padding: .3em .8em;
     }
 }
-@media only screen and (max-width: 710px) {
+@media only screen and (max-width: 775px) {
     .main h1 {
         margin-bottom: .4em;
         font-size: 3rem;
@@ -406,13 +406,27 @@ footer {
     .main h2 {
         font-size: 1.5rem;
     }
+
     .main .arrow {
         max-width: 2.8em;
     }
     .btn-reg-n {
         font-size: 1.4em;
         padding: .25em .35em;
+        /* display: none; */
     }
+    .list-item:last-child {
+      display: none;
+    }
+    .logo{
+      flex: 0;
+  }
+  .what h2 {
+    font-size: 1.2em;
+  }
+  .what p {
+    font-size: .8em;
+  }
 }
 @media only screen and (max-width: 640px) {
     .main {
@@ -439,18 +453,11 @@ footer {
         max-height: 4.5rem;   
     }
 
-    .logo{
-        flex: 0;
-    }
-    .btn-reg {
-        display: none;
-    }
-
     .what h2 {
-        font-size: 1.4em;
+        font-size: 1.3em;
     }
     .what p {
-        font-size: 1.25em;
+        font-size: .8em;
     }
 }
 @media only screen and (max-width: 555px) {
@@ -486,10 +493,10 @@ footer {
     }
 
     .what h2 {
-        font-size: 1.2em;
+        font-size: 1em;
     }
     .what p {
-        font-size: 1em;
+        font-size: .7em;
     }
 }
 @media only screen and (max-width: 500px) {
@@ -498,6 +505,15 @@ footer {
         justify-items: center;
         align-content: space-evenly;
         min-height: 80vh;
+    }
+    header::after {
+      content: '|||';
+      letter-spacing: .1em;
+      transform: rotate(90deg);
+      font-size: 1.2em;
+    }
+    header:hover::after {
+      cursor: pointer;
     }
     .main h1 {
         font-size: 3rem;
@@ -528,7 +544,7 @@ footer {
         font-size: 1.9em;
     }
     .what p {
-        font-size: 1.4em;
+        font-size: 1.2em;
     }
 }
 @media only screen and (max-width: 320px) {
@@ -544,8 +560,14 @@ footer {
     .main h2 {
         font-size: 1.4rem;
     }
+    .arrow {
+      max-height: 4em;
+    }
     .btn-reg-n {
-        font-size: 1.6em;
-        padding: .25em .2em;
+        font-size: 1.3em;
+        padding: .15em .15em;
+    }
+    .what p {
+      font-size: 1em;
     }
 }
