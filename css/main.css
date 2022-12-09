@@ -355,7 +355,7 @@ footer {
 .how .container .left-col h3 {
   width: fit-content;
   margin: auto;
-
+  color: #fcce45;
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -364,7 +364,17 @@ footer {
 }
 .how .container .right-col img {
   height: 200px;
+  margin-left: 80px;
 }
 .how .container .left-col img {
   height: 200px;
+  margin-left: 80px;
+}
+.card {
+  border-radius: 13%;
+  box-shadow: 0 6px 4px 4px gray;
+  height: 300px;
+  width: 400px;
+  background-color: #ffffff;
+  align-items: center;
 }
