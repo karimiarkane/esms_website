@@ -63,7 +63,9 @@ ul {
 .inactive .answ {
   display: none;
 }
-
+.time {
+  padding: 50px 0;
+}
 .time_left {
   border: 2px solid green;
 }
@@ -231,7 +233,7 @@ header {
   color: rgba(24, 148, 171, 1);
   text-align: center;
   font-size: 45px;
-  margin-bottom: 50px;
+  margin-bottom: 80px;
 }
 .time-remaining {
   margin: auto auto 60px auto;
