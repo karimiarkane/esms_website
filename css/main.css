@@ -158,6 +158,7 @@
     padding: 1rem 8vw;
     width: 100%;
     height: 100vh;
+    min-height: 20em;
 }
 .right-col {
     padding: 1rem;
@@ -168,9 +169,12 @@
 
 .main .container {
     height: 100%;
+
 }
 .main {
     height: 100vh;
+    min-height: 30em;
+
     background: linear-gradient(
     to left,
     rgba(168, 168, 168, 0.4612),
