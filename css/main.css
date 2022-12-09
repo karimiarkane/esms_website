@@ -308,7 +308,11 @@ header {
 }
 #next,
 #previous {
-  padding-top: 50px;
+  padding-top: 10%;
+}
+#next1,
+#previous1 {
+  padding-top: 10%;
 }
 
 footer {
